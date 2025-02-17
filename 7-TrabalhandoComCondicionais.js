@@ -1,0 +1,28 @@
+console.log(`Trabalhando com condicionais`);
+
+const listaDeDestinos = new Array(
+    `Salvador`,
+    `São Paulo`,
+    `Rio De Janeiro`
+);
+
+const idadeComprador = 15;
+const estaAcompanhada = true;
+
+console.log("Destinos possíveis:");
+console.log(listaDeDestinos);
+
+if(idadeComprador >= 18){
+    console.log("Comprador maior de idade");
+    listaDeDestinos.splice(1,1); //remove item
+}else{
+    //está acompanhada
+    if(estaAcompanhada == true){
+        console.log("Comprador está acompanhado");
+        listaDeDestinos.splice(1,1); //remove item
+    }else{
+        console.log("Não é maior de idade.");
+    }
+}
+
+console.log(listaDeDestinos)
